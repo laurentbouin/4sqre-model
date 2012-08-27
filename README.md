@@ -25,7 +25,7 @@ Examples
 
 #### Checkin
 
-If, like me, you're developping a connected app, you have handle checkins, that's simpler:
+If, like me, you're developing a connected app, you have to handle checkins, that's simpler:
 
 		Checkin pushed = new Gson().fromJson(checkinAsString, Checkin.class); 
 
