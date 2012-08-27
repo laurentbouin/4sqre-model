@@ -14,3 +14,9 @@ target
 .idea/copyright/profiles_settings.xml
 
 4sqre-model.ipr
+
+*.jar
+
+*.xml
+
+*.iws
