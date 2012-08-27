@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.lbo</groupId>
+  <artifactId>4sqre-model</artifactId>
+  <version>0.1-beta</version>
+  <packaging>jar</packaging>
+
+  <name>4sqre-model</name>
+  <url>https://github.com/laurentbouin/4sqre-model</url>
+
+  <issueManagement>
+    <url>https://github.com/laurentbouin/4sqre-model/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <scm>
+    <url>https://github.com/laurentbouin/4sqre-model</url>
+    <connection>scm:git:git://github.com/laurentbouin/4sqre-model.git</connection>
+    <developerConnection>scm:git:git@github.com:laurentbouin/4sqre-model.git</developerConnection>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <distributionManagement>
+    <site>
+        <id>github-4sqre-site</id>
+        <name>GitHub Project Pages</name>
+        <url>gitsite:git@github.com/laurentbouin/4sqre-model.git</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+        <name>Laurent Bouin</name>
+        <timezone>-5</timezone>
+        <url>http://about.me/laurentbouin</url>
+    </developer>
+  </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>downloads-maven-plugin</artifactId>
+                <version>0.6</version>
+                <configuration>
+                    <description>Official ${project.name} build of the ${project.version} release</description>
+                    <override>true</override>
+                    <includeAttached>true</includeAttached>
+                    <server>github</server>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>upload</goal>
+                        </goals>
+                        <phase>install</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.2.2</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>
