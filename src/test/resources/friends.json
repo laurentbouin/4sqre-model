@@ -1,0 +1,76 @@
+{
+    meta: {
+        code: 200
+    },
+    notifications: [
+    {
+        type: "notificationTray",
+        item: {
+            unreadCount: 0
+        }
+    }
+    ],
+response: {
+    friends: {
+        count: 2,
+        items: [
+                {
+                    id: "335864",
+                    firstName: "Laurent",
+                    lastName: "Bouin",
+                    relationship: "friend",
+                    photo: {
+                        prefix: "https://irs1.4sqi.net/img/user/",
+                        suffix: "/blank_boy.jpg"
+                    },
+                    tips: {
+                        count: 3
+                    },
+                    lists: {
+                        groups: [
+                            {
+                                type: "created",
+                                count: 2,
+                                items: [ ]
+                            }
+                    ]
+                    },
+                    gender: "male",
+                    homeCity: "New York, NY",
+                    bio: "some bio",
+                    contact: {
+
+                    }
+                },
+                {
+                    id: "1",
+                    firstName: "Jimmy",
+                    lastName: "F.",
+                    relationship: "friend",
+                    photo: {
+                        prefix: "https://irs1.4sqi.net/img/user/",
+                        suffix: "/blank_boy.jpg"
+                    },
+                    tips: {
+                        count: 3
+                    },
+                    lists: {
+                        groups: [
+                            {
+                                type: "created",
+                                count: 2,
+                                items: [ ]
+                            }
+                        ]
+                    },
+                    gender: "male",
+                    homeCity: "New York, NY",
+                    bio: "some bio",
+                    contact: {
+                    }
+                }
+
+        ]
+}
+}
+}

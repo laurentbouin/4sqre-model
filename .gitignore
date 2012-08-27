@@ -6,3 +6,11 @@ src/main/java/com/lbo/.DS_Store
 *.class
 
 target
+
+.idea/.name
+
+.idea/compiler.xml
+
+.idea/copyright/profiles_settings.xml
+
+4sqre-model.ipr
