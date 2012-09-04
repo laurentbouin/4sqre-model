@@ -1,0 +1,10 @@
+{
+    meta:{
+        code:400,
+        errorType:"param_error",
+        errorDetail:"Invalid checkin id"
+        },
+    response:{
+
+    }
+}
