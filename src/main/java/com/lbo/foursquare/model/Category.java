@@ -6,6 +6,7 @@ public class Category implements Serializable{
 
     public String id;
     public String name;
+    //public Icon icon;
 
 }
 //Wine Bar: 4bf58dd8d48988d123941735
