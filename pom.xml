@@ -4,7 +4,7 @@
 
   <groupId>com.lbo</groupId>
   <artifactId>4sqre-model</artifactId>
-  <version>0.1-beta</version>
+  <version>0.2-beta</version>
   <packaging>jar</packaging>
 
   <name>4sqre-model</name>
