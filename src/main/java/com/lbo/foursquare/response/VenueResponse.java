@@ -1,6 +1,5 @@
 package com.lbo.foursquare.response;
 
-import com.lbo.foursquare.model.List;
 import com.lbo.foursquare.model.Venue;
 
 import java.io.Serializable;

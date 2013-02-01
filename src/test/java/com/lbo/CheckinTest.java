@@ -53,6 +53,7 @@ public class CheckinTest {
         Checkin checkin = new Gson().fromJson(reader,  Checkin.class);
 
         assertEquals(new Long(1),checkin.user.id);
+        assertEquals("checkin",checkin.type);
         assertEquals("4ab7e57cf964a5205f7b20e3",checkin.venue.id);
 
     }

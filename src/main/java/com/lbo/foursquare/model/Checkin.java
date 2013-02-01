@@ -10,6 +10,7 @@ import java.io.Serializable;
 public class Checkin implements Serializable {
 
     public String id;
+    public String type;
     public Venue venue;
     public CompactUser user;
 
